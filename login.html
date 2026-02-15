@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login__Page</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="/login" method="post" class="form" autocomplete="off">
+        <h2>Login</h2>
+        <p>Login now and get full access to our Service</p>
+
+        <label for="email" class="email">
+            <input type="email" required class="box" placeholder="" name="email">
+            <span>Email</span>
+        </label>
+
+        <label for="password" class="password">
+            <input type="password" required class="box" placeholder="" name="password">
+            <span>Password</span>
+        </label>
+
+        <button class="button" type="submit">
+            Login
+        </button>
+
+        <div class="sign-up">
+            <span class="sign-message">Want to create new account?</span>
+            <a href="/register">Signup</a>
+        </div>
+
+        <script src="/static/script.js"> </script>
+</body>
+</html>

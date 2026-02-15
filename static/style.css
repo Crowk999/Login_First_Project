@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    perspective: 1000px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border-radius: 25px;
+    position: relative;
+    gap: 3px;
+    max-width: 380px;
+
+}
+h2{
+    font-size: 35px;
+    margin-left: 36%;
+}
+p{
+    font-size: 20px;
+    margin-left: 30px;
+}
+input{
+    height: 35px;
+    border-radius: 15px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+span{
+    position: relative;
+    left: 15px;
+    top: -30px;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    left: 37%;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: red;
+    color: blue;
+    box-shadow: 0 0 25px red,
+                0 0 50px blue,
+                0 0 100px green;
+}
+.sign-message{
+    position: relative;
+    top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+a{
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.814);
+}
+a:hover{
+    color: red;
+    font-size: 22px;
+}
+
+input:focus + span, 
+input:not(:placeholder-shown) + span{
+    font-size: 10px;
+    color: transparent;
+}
+
+.flip {
+    animation: flipBox 0.8s forwards;
+    transform-style: preserve-3d;
+}
+@keyframes flipBox{
+    0%{
+        transform: rotateY(0deg) scale(1);
+    }
+    50%{
+        transform: rotateY(90deg) scale(0.3);
+    }
+    100%{
+        transform: rotateY(90deg) scale(0.3);
+    }
+}

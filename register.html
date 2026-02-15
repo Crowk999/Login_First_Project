@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="/register" method="post" class="form" autocomplete="off">
+        <h2>Register</h2>
+        <p>Signup now and get full access to our Service</p>
+        <div class="main">
+            <label>
+                <input type="text" required placeholder="" name="firstname">
+                <span >Firstname</span>
+            </label>
+            <label>
+                <input type="text" required placeholder="" name="lastname">
+                <span>Lastname</span>
+            </label>
+        </div>
+
+        <label class="email">
+            <input type="email" required class="box" placeholder="" name="email">
+            <span>Email</span>
+        </label>
+
+        <label class="password" >
+            <input type="password" required class="box" placeholder="" name="password">
+            <span>Password</span>
+        </label>
+
+        <label class="confirm">
+            <input type="password" required class="box" placeholder="" name="confirm_password">
+
+            <span>Confirm Password</span>
+        </label>
+
+        <button class="button" type="submit">
+            Submit
+        </button>
+
+        <div class="sign-in">
+            <span class="sign-message">Already have an account?</span>
+            <a href="/login">Signin</a>
+        </div>
+
+    </form>
+
+    <script src="/static/script.js"> </script>
+</body>
+</html>
